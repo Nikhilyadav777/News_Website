@@ -1,0 +1,16 @@
+<div class="container-fluid mt-5">
+    <h4 class="fw-bold">Top Headlines</h4>
+    <div class="row">
+        <div *ngFor="let d of HealthNewsDisplay" class="col-lg-3  mt-3 mb-3">
+            <div class="card box w-100 h-100">
+                <img src="{{d.urlToImage}}" class="card-img-top h-100" width="100%" alt="...">
+                <div class="card-body mt-3">
+                    <h5 class="card-title mb-3 mt-1">{{d.title}}</h5>
+                      <div class="position-absolute bottom-left">
+                    <a href="{{d.url}}" target="_blank" class="btn btn-dark btn-sm ">Read More</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
